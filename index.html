@@ -1,142 +1,121 @@
-<!DOCTYPE html>         <!---"!"+回车，自动生成模板，body里写内容-->
+<!DOCTYPE html>
 <html lang="en">
-
-<!-- Ctrl+/ 整行注释 -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style></style>           <!---style里写CSS-->
-</head>
-
-<body>
-    <h4 align=center>注册界面</h4>
-
-    <table align=center>            <!--//以表格形式布局-->
-        <tr>                                          <!--//第一行-->
-            <td>姓名：</td>          <!--//第一个单元格-->
-            <td>
-                <input type="text">        <!--//普通文本框-->
-            </td>
-        </tr>
-
-        <tr>                                          <!--//第二行-->
-            <td>性别：</td>
-            <td>
-                <input type="radio" name="sex"> 男   <!--//当name相同时，是单选框-->
-                <input type="radio" name="sex"> 女
-            </td>
-        </tr>
-
-        <tr>                                          <!--//第三行-->
-            <td>电话号码：</td>
-            <td>
-                <input type="text">
-            </td>
-        </tr>
-
-        <tr>                                           <!--//第四行-->
-            <td>证件号码：</td>
-            <td>
-                <input type="text">
-            </td>
-        </tr>
-
-        <tr>                                           <!--//第五行-->
-            <td>籍贯：</td>
-            <td>
-                <select name="zhengjian" >    <!--//下拉选择框-->
-                    <option>请选择</option>
-                    <option>湖南</option>
-                    <option>湖北</option>
-                    <option>广州</option>
-                    <option>深圳</option>
-                    <option>北京</option>
-                    <option>天津</option>
-                    <option>河南</option>
-                    <option>江西</option>
-                </select>
-            </td>
-        </tr>
-
-        <tr>                                            <!--//第六行-->
-            <td>喜好：</td>
-            <td> 
-                <input type="checkbox" name='love'> 美食      <!--//复选框-->
-                <input type="checkbox" name='love'> 旅行
-                <input type="checkbox" name='love'> 摄影
-                <input type="checkbox" name='love'> 手工
-                <br>                                          <!--//换行符-->
-                <input type="checkbox" name='love'> 吉他
-                <input type="checkbox" name='love'> 穿搭
-            </td>
-        </tr>
- 
-        <tr>                                             <!--//第七行-->
-            <td>简要介绍：</td>
-            <td>
-                <textarea name="jieshao" cols="30" rows="4"></textarea>   <!--//多行文本框-->
-            </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>
-                <a href="https://www.bilibili.com/video/BV14J4114768?p=59">注册条款</a>     <!--超链接-->
-            </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>
-                <input type="checkbox" checked="checked"> 我同意注册条款    <!---checked="checked"代表默认选上复选框-->
-            </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="注册">                    <!--//按钮 -->
-            </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>
-                <h6>小标题 h6大小</h6>
-                <ul>
-                    <li>我想不出写啥了。。。</li>
-                    <li>无序列表第二行</li>
-                    <li>无序列表第三行</li>
-                </ul>             
-            </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>
-                <h1>这是个有序列表 h1大小</h1>
-                <ol>
-                    <li>第一行</li>
-                    <li>第二行</li>
-                    <li>第三行</li>
-                </ol>
-
-            </td>
-        </tr>
-
-    </table>
-
-    <h3>简要介绍：</h3>
-    <p>HTML5是构建Web内容的一种语言描述方式。<br/>                     <!--段落文本-->               <!---换行-->
-        是互联网的下一代标准，是构建以及呈现互联网内容的一种<b>语言方式</b>．                          <!---加粗-->
-        被认为是互联网的核心技术之一。HTML产生于1990年，1997年HTML4成为互联网标准，并<i>广泛应用于</i>  <!---倾斜-->
-        互联网应用的开发。HTML5是Web中核心语言HTML的规范，用户使用任何手段进行<s>网页浏览时</s>         <!---删除线-->
-        看到的内容原本都是HTML格式的，在浏览器中通过一些技术处理将其转换成为了可识别的信息。<u>HTML5</u> <!---下划线-->
-        在从前HTML4.01的基础上进行了一定的改进，虽然技术人员在开发过程中可能不会将这些新技术投入应用，   
-        但是对于该种技术的新特性，网站开发技术人员是必须要有所了解的。</p>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <title>Project Akhir</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-link">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="jumbotron" id="home">
+        <div class="hero-text">
+          <h2><u>Onigashima Project</u></h2>
+          <h1>
+            Let's <span class="title">Explore</span> the Beauty of
+            <span class="title">Japan</span>
+          </h1>
+          <a href="#" class="explore">Explore Now</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="about">
+        <article>
+          <h1><span class="title">What is Onigashima Project?</span></h1>
+          <p>
+            Onigashima Project is a travel agency which was founded in 2013 and
+            based in Bandung, we provides services to explore the beauty in
+            every corner of Japan. We provide services such as airline tickets,
+            lodging, vehicles, tour guides and other services. Tourists can
+            visit downtown Tokyo, thousands of temples in Kyoto, or feel the
+            experience of climbing the mountains of Fuji.
+          </p>
+        </article>
+        <aside class="profile">
+          <img src="assets/images/profile.jpg" alt="" />
+          <div class="info">
+            <h1>Founder - CEO</h1>
+            <h1>Your Name</h1>
+            <p>
+              The best and most beautiful things in the world cannot be seen or
+              even touched — they must be felt with the heart. <br />-Helen
+              Keller
+            </p>
+          </div>
+        </aside>
+      </div>
+      <div class="benefits" id="benefits">
+        <h1>Why Choose Us ?</h1>
+        <div class="benefits-items">
+          <div class="box">
+            <h1>1</h1>
+            <p>Easy Schedule</p>
+            <p class="desc">
+              You can choose departure and return schedules in one package or
+              reschedule without any cost deduction in minutes via the website
+              or mobile application
+            </p>
+          </div>
+          <div class="box">
+            <h1>2</h1>
+            <p>Include Visa</p>
+            <p class="desc">
+              The travel package includes administrative fees such as taxes and
+              visas
+            </p>
+          </div>
+          <div class="box">
+            <h1>3</h1>
+            <p>Insurance</p>
+            <p class="desc">
+              The fee includes an insurance package that can protect you while
+              traveling, so you can vacation in peace
+            </p>
+          </div>
+          <div class="box">
+            <h1>4</h1>
+            <p>Single or Group</p>
+            <p class="desc">
+              You can book a private travel package or a group trip which is
+              perfect to enjoy with friends or family
+            </p>
+          </div>
+          <div class="box">
+            <h1>5</h1>
+            <p>Gift and Discount</p>
+            <p class="desc">
+              There are lots of attractive prizes and promos that you can enjoy
+              in every travel package, such as discounts, food or lodging
+              vouchers
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel" id="gallery">
+        <div class="carousel-info">
+          <h1>Top Destination</h1>
+          <div class="action">
+            <button id="shizuoka" class="btn">Shizuoka</button>
+            <button id="kyoto" class="btn">Kyoto</button>
+            <button id="naoyama" class="btn">Naoyama</button>
+          </div>
+        </div>
+        <img src="assets/images/kyoto.jpg" alt="photo" id="destination" />
+      </div>
+    </main>
+    <footer>
+      <p>Bandung &#169; 2022 - Ahmad Rizal I</p>
+    </footer>
+    <script src="assets/main.js"></script>
+  </body>
 </html>
